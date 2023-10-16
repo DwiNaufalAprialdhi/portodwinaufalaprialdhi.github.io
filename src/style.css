@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body {
+        @apply font-openSans dark:bg-fullgrey dark:text-white relative;
+    }
+    nav {
+        @apply fixed flex w-full bg-originalgrey dark:bg-semigrey z-50;
+    }
+}
+
+@layer components{
+
+    /* Section Navbar */
+    .navbar {
+        @apply flex z-50 w-full items-center justify-between lg:justify-end lg:gap-[160px] py-[36px] px-[47px];
+    }
+    .navbar_menu {
+        @apply hidden lg:flex items-center gap-6 text-xl not-italic font-normal text-black leading-normal dark:text-white;
+    }
+    .hamburger {
+        @apply lg:hidden;
+    }
+    .hamburger_menu {
+        @apply cursor-pointer;
+    }
+    #dark-toggle:checked ~ label div.toggle-circle {
+        @apply translate-x-[21px];
+    }
+
+    /* Section Overlay */
+    .overlay {
+        @apply fixed lg:hidden -left-full h-full top-0 bottom-0 bg-brand w-64 z-[100] transition-all duration-300;
+    }
+    .overlay_menu {
+        @apply px-4 py-7 text-semigrey flex flex-col gap-4;
+    }
+    .overlay_active {
+        @apply left-0 top-0 bottom-0;
+    }
+    .overlay_close {
+        @apply bg-originalgrey cursor-pointer rounded-full max-w-max p-1 dark:bg-semigrey;
+    }
+
+    /* Section Hero */
+    .hero {
+        @apply pb-20 pt-[194px] mx-auto text-center flex flex-col gap-9 lg:flex lg:flex-row lg:items-center lg:justify-center;
+    }
+    .hero_image {
+        @apply -translate-x-[40px] lg:w-[843px] lg:h-[784px];
+    }
+    .hero_title {
+        @apply gap-[5px] flex flex-col justify-center lg:text-end;
+    }
+    .hero_tittle1 {
+        @apply text-2xl font-light leading-normal;
+    }
+    .hero_tittle2 {
+        @apply text-4xl font-extrabold not-italic uppercase leading-normal;
+    }
+    .hero_tittle3 {
+        @apply text-xl font-semibold not-italic uppercase leading-normal;
+    }
+    .hero_button {
+        @apply mt-5 bg-brand rounded-full py-3 px-5 text-white w-[300px] mx-auto text-xl font-bold uppercase lg:text-center;
+    }
+
+    /* Section About Me */
+    .aboutme {
+        @apply pt-[151px] pb-[209px] bg-originalgrey dark:bg-semigrey;
+    }
+    .aboutme_flex1{
+        @apply flex flex-col items-center px-10 gap-[81px] lg:flex lg:flex-row lg:justify-between;
+    }
+    .avatar {
+        @apply rounded-full lg:w-[402px] lg:h-[402px];
+    }
+    .aboutme_flex2 {
+        @apply flex flex-col gap-[71px];
+    }
+    .title {
+        @apply text-4xl not-italic font-extrabold leading-normal text-center lg:text-start;
+    }
+    .description {
+        @apply text-lg not-italic font-normal leading-normal;
+    }
+    .aboutme_flex3 {
+        @apply flex justify-center gap-[60px] lg:justify-start;
+    }
+    .button1 {
+        @apply bg-brand p-2 rounded-md text-white font-bold leading-normal not-italic flex items-center gap-[22px];
+    }
+    .button2 {
+        @apply bg-brand p-2 rounded-md text-white font-bold leading-normal not-italic flex items-center gap-[22px];
+    }
+
+    /* Section Project */
+    .project {
+        @apply pt-[200px] mx-auto;
+    }
+    .project_title {
+        @apply text-4xl not-italic font-extrabold leading-normal text-center;
+    }
+    .project_flex1 {
+        @apply flex pt-[90px] flex-col justify-center items-center gap-[47px] lg:gap-16;
+    }
+    .project_flex2 {
+        @apply flex flex-col gap-[67px] px-10 lg:grid lg:grid-cols-12;
+    }
+    .card {
+        @apply bg-originalgrey dark:bg-semigrey py-[39px] px-[29px] rounded-md flex flex-col gap-6 lg:col-span-4;
+    }
+    .project_name {
+        @apply text-lg font-bold leading-normal;
+    }
+    .project_description {
+        @apply text-lg font-normal leading-normal;
+    }
+    .project_button {
+        @apply bg-brand rounded-md text-lg font-extrabold leading-normal text-center text-white py-1;
+    }
+    .astronot {
+        @apply w-[302px] h-[269px] lg:w-[926px] lg:h-[749px];
+    }
+
+    /* Section Skills */
+    .skills {
+        @apply bg-originalgrey dark:bg-semigrey pt-[110px] pb-[88px] px-10 mx-auto lg:px-[152px];
+    }
+    .skills_flex1 {
+        @apply flex flex-col gap-[52px] items-center lg:flex lg:flex-row justify-center;
+    }
+    .skills_flex2 {
+        @apply flex flex-col gap-[52px] lg:max-w-2xl;
+    }
+    .skills_title {
+        @apply text-4xl font-extrabold leading-normal text-center lg:text-start;
+    }
+    .skills_description {
+        @apply text-lg font-normal leading-normal;
+    }
+    .skills_flex3 {
+        @apply flex flex-wrap gap-x-10 gap-y-6 justify-center items-center max-w-[350px];
+    }
+    .skills_box {
+        @apply bg-white dark:bg-fullgrey py-[13px] px-5 rounded-md;
+    }
+
+    /* Section Education */
+    .education {
+        @apply relative pt-[153px] pb-[459px] lg:pb-[100px] lg:pt-[200px];
+    }
+    .globe {
+        @apply lg:absolute top-0 left-0;
+    }
+    .education_title {
+        @apply text-4xl font-extrabold leading-normal text-center mb-14 lg:mt-[69px] lg:mb-[109px];
+    }
+    .education_flex1 {
+        @apply bg-originalgrey dark:bg-semigrey rounded-md py-6 px-5 ml-11 flex flex-col mb-[161px] gap-14 lg:flex lg:flex-row lg:pr-[114px] lg:pl-[66px] lg:ml-[538px];
+    }
+    .education_card1 {
+        @apply flex flex-col gap-5;
+    }
+    .education_card_name1 {
+        @apply text-lg font-extrabold leading-normal border-b-[6px] border-brand;
+    }
+    .education_card_description1 {
+        @apply text-lg font-normal leading-normal;
+    }
+    .education_flex2 {
+        @apply bg-originalgrey dark:bg-semigrey rounded-md py-6 px-5 mr-11 flex flex-col gap-14 lg:flex lg:flex-row lg:pl-[114px] lg:pr-[66px] lg:mr-[538px];
+    }
+    .education_card2 {
+        @apply flex flex-col gap-5;
+    }
+    .education_card_name2 {
+        @apply text-lg font-extrabold leading-normal border-b-[6px] border-brand;
+    }
+    .education_card_description2 {
+        @apply text-lg font-normal leading-normal;
+    }
+    .man {
+        @apply absolute bottom-0 right-0 -z-50;
+    }
+
+    /* Section Footer */
+    .footer {
+        @apply p-[91px] bg-brand;
+    }
+    .footer_flex {
+        @apply flex gap-[68px] justify-center items-center;
+    }
+}
+
