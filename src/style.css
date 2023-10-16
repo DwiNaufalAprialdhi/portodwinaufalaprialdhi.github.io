@@ -66,7 +66,7 @@
         @apply text-xl font-semibold not-italic uppercase leading-normal;
     }
     .hero_button {
-        @apply mt-5 bg-brand rounded-full py-3 px-5 text-white w-[300px] mx-auto text-xl font-bold uppercase lg:text-center;
+        @apply mt-5 bg-brand rounded-full py-3 px-5 text-white w-[300px] mx-auto text-xl font-bold uppercase lg:text-center hover:bg-semigrey;
     }
 
     /* Section About Me */
@@ -92,10 +92,10 @@
         @apply flex justify-center gap-[60px] lg:justify-start;
     }
     .button1 {
-        @apply bg-brand p-2 rounded-md text-white font-bold leading-normal not-italic flex items-center gap-[22px];
+        @apply bg-brand py-2 px-5 rounded-full text-white font-bold leading-normal not-italic flex items-center gap-[22px] hover:bg-semigrey;
     }
     .button2 {
-        @apply bg-brand p-2 rounded-md text-white font-bold leading-normal not-italic flex items-center gap-[22px];
+        @apply bg-brand py-2 px-5 rounded-full text-white font-bold leading-normal not-italic flex items-center gap-[22px] hover:bg-semigrey;
     }
 
     /* Section Project */
@@ -121,7 +121,7 @@
         @apply text-lg font-normal leading-normal;
     }
     .project_button {
-        @apply bg-brand rounded-md text-lg font-extrabold leading-normal text-center text-white py-1;
+        @apply bg-brand rounded-full text-lg font-extrabold leading-normal text-center text-white py-1 hover:bg-semigrey;
     }
     .astronot {
         @apply w-[302px] h-[269px] lg:w-[926px] lg:h-[749px];

@@ -795,6 +795,11 @@ nav{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hero_button:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 44 44 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 1024px){
   .hero_button{
     text-align: center;
@@ -888,10 +893,13 @@ nav{
   display: flex;
   align-items: center;
   gap: 22px;
-  border-radius: 0.375rem;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(249 168 38 / var(--tw-bg-opacity));
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   font-weight: 700;
   font-style: normal;
   line-height: 1.5;
@@ -899,19 +907,32 @@ nav{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.button1:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 44 44 / var(--tw-bg-opacity));
+}
+
 .button2{
   display: flex;
   align-items: center;
   gap: 22px;
-  border-radius: 0.375rem;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(249 168 38 / var(--tw-bg-opacity));
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   font-weight: 700;
   font-style: normal;
   line-height: 1.5;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button2:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 44 44 / var(--tw-bg-opacity));
 }
 
 /* Section Project */
@@ -1000,7 +1021,7 @@ nav{
 }
 
 .project_button{
-  border-radius: 0.375rem;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(249 168 38 / var(--tw-bg-opacity));
   padding-top: 0.25rem;
@@ -1012,6 +1033,11 @@ nav{
   line-height: 1.5;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.project_button:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 44 44 / var(--tw-bg-opacity));
 }
 
 .astronot{
